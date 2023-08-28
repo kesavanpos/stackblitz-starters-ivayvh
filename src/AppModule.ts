@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CircularProgressComponent } from '../../src/circular-progress'; // Adjust the path as needed
+import { AppComponent } from '../src/app-component/app-component.component'; // Adjust the path as needed
+import { CircularProgressComponent } from '../src/circular-progress/circular-progress.component'; // Adjust the path as needed
 
 @NgModule({
   declarations: [
-    CircularProgressComponent
+    AppComponent,
+    CircularProgressComponent,
     // Other components, directives, and pipes
   ],
   imports: [
     BrowserModule,
     // Other modules
   ],
-  bootstrap: [CircularProgressComponent] // This specifies the main component
+  bootstrap: [AppComponent], // This specifies the main component
 })
-export class AppModule { }
+export class AppModule {}

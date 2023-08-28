@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 export class CircularProgressComponent {
   constructor() {}
 
-  @Input() inputPercentage: number;
-  @Input() additionalValue: string;
+  @Input() inputPercentage!: number; // Marked as optional with '!'
+  @Input() additionalValue!: string; // Marked as optional with '!'
 }
